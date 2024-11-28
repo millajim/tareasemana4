@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registro Exitoso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container success-container mt-5">
+        <h1 class="text-success">Registro Exitoso</h1>
+        <p><strong>Nombre:</strong> <span th:text="${alumno.nombre}"></span></p>
+        <p><strong>Apellido Paterno:</strong> <span th:text="${alumno.apellidoPaterno}"></span></p>
+        <p><strong>Apellido Materno:</strong> <span th:text="${alumno.apellidoMaterno}"></span></p>
+        <p><strong>Fecha de Nacimiento:</strong> <span th:text="${alumno.fechaNacimiento}"></span></p>
+        <p><strong>Lugar de Residencia:</strong> <span th:text="${alumno.lugarResidencia}"></span></p>
+        <p><strong>Edad:</strong> <span th:text="${alumno.edad}"></span></p>
+        <p><strong>Teléfono:</strong> <span th:text="${alumno.telefono}"></span></p>
+        <p><strong>Correo Electrónico:</strong> <span th:text="${alumno.correoElectronico}"></span></p>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
